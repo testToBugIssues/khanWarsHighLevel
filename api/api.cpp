@@ -13,19 +13,9 @@ public:
   ~khanWarsAPIimpl()=default;
 };
 
-khanWarsAPI::printContent(QNetworkReply* reply)
-{
-  auto content = reply.readAll();
-}
 
 khanWarsAPI::khanWarsAPI(std::string username, std::string password):impl(std::make_unique<khanWarsAPIimpl>())
-{
-  impl->m_requestNumber=1;
-  QUrl auth("https://www.guerrakhan.com/login/authenticateByCredentials");
-  QUrlQueryParams params({{"username",username},{"password",password}});
-  connect(m_accessManager,finish(QNetworkReply*),this,printContent); 
-  
-  
+{ 
 }
 
 

@@ -1,6 +1,7 @@
 #ifndef CONSOLE_H
 #define CONSOLE_H
 #include <QThread>
+#include <QObject>
 #include <user.hpp>
 
 class console : public QThread

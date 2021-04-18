@@ -14,7 +14,7 @@ add_subdirectory(console)
 
 add_executable(main main.cpp)
 
-target_link_libraries(main PRIVATE Qt6::core)
+target_link_libraries(main PRIVATE Qt6::Core)
 target_link_libraries(main PRIVATE user)
 target_link_libraries(main PRIVATE console)
 target_link_libraries(main PRIVATE api)
