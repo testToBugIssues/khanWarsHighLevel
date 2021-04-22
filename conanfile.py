@@ -12,6 +12,7 @@ class KhanwarsSimplifierConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
     requires = "qt/6.0.3"
+    default_options="qt/6.0.3:shared=False"
 
     def config_options(self):
         pass

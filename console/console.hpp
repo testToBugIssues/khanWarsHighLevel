@@ -14,8 +14,6 @@ private:
   user sessionUser;
 protected:
   void run() override;
-signals:
-  void someBuzzWord();
 
 };
 #endif

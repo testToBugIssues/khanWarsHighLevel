@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.19.3)
 project(khanWars)
 enable_testing()
 
+set(CMAKE_AUTOMOC ON)
 
 find_package(Qt6 6.0.3 EXACT REQUIRED)
 
