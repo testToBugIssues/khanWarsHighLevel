@@ -13,19 +13,19 @@ add_subdirectory(api)
 add_subdirectory(user)
 add_subdirectory(console)
 
-add_executable(main main.cpp)
+#add_executable(main main.cpp)
 
-target_link_libraries(main PRIVATE Qt6::Core)
-target_link_libraries(main PRIVATE user)
-target_link_libraries(main PRIVATE console)
-target_link_libraries(main PRIVATE api)
-
-
+#target_link_libraries(main PRIVATE Qt6::Core)
+#target_link_libraries(main PRIVATE user)
+#target_link_libraries(main PRIVATE console)
+#target_link_libraries(main PRIVATE api)
 
 
-add_test(NAME findUsernameAndPassword COMMAND main)
-set(sucessTestEnv "KHANWARS_USERNAME=petrolifero" "KHANWARS_PASSWORD=123")
-set_tests_properties(findUsernameAndPassword PROPERTIES ENVIRONMENT "${sucessTestEnv}")
 
-add_test(NAME dontFindUsernameOrPassword COMMAND main)
-set_tests_properties(dontFindUsernameOrPassword PROPERTIES WILL_FAIL true)
+
+#add_test(NAME findUsernameAndPassword COMMAND main)
+#set(sucessTestEnv "KHANWARS_USERNAME=petrolifero" "KHANWARS_PASSWORD=123")
+#set_tests_properties(findUsernameAndPassword PROPERTIES ENVIRONMENT "${sucessTestEnv}")
+
+#add_test(NAME dontFindUsernameOrPassword COMMAND main)
+#set_tests_properties(dontFindUsernameOrPassword PROPERTIES WILL_FAIL true)

@@ -25,7 +25,7 @@ class KhanwarsSimplifierConan(ConanFile):
         cmake.definitions["CMAKE_MODULE_PATH"]=self.build_folder
         cmake.configure()
         cmake.build()
-        cmake.test()
+#        cmake.test()
 
     def package(self):
         pass
