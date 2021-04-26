@@ -4,10 +4,13 @@ enable_testing()
 
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt6 6.0.3 EXACT REQUIRED)
+#find_package(Qt6 6.0.3 EXACT REQUIRED)
 
 set(CMAKE_CXX_STANDARD 17)
 add_compile_options(-fPIC)
+
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
 
 add_subdirectory(api)
 add_subdirectory(user)

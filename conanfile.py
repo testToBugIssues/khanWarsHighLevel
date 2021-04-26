@@ -22,7 +22,7 @@ class KhanwarsSimplifierConan(ConanFile):
 
     def build(self):
         cmake = CMake(self,"Ninja")
-        cmake.definitions["CMAKE_MODULE_PATH"]=self.build_folder
+#        cmake.definitions["CMAKE_MODULE_PATH"]=self.build_folder
         cmake.configure()
         cmake.build()
 #        cmake.test()
